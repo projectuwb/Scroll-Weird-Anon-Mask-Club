@@ -2,14 +2,28 @@
 <html lang="en">
 <head>
   <title>Title of the document</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #frame-container {
+      width: 80%;
+      height: 80%;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-<iframe
-    src="https://ipfs.thirdwebcdn.com/ipfs/QmbAgC8YwY36n8H2kuvSWsRisxDZ15QZw3xGZyk9aDvcv7/erc721.html?contract=0x8B8F90976974084541B54D6730E846258585A6c9&chain=%7B%22name%22%3A%22Scroll+Alpha+Testnet%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fscroll-alpha-testnet.rpc.thirdweb.com%2F5a9bc94b87f7cbbbfbbc234bf1e07f0adf5f3cf3012c9f26f9fc9820d64df93a%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22scr-alpha%22%2C%22chainId%22%3A534353%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22scroll-alpha-testnet%22%7D"
-    width="600px"
-    height="600px"
-    style="max-width:100%;"
-    frameborder="0"
-    ></iframe>
+  <div id="frame-container">
+    <iframe src="https://ipfs.thirdwebcdn.com/ipfs/QmbAgC8YwY36n8H2kuvSWsRisxDZ15QZw3xGZyk9aDvcv7/erc721.html?contract=0x8B8F90976974084541B54D6730E846258585A6c9&chain=%7B%22name%22%3A%22Scroll+Alpha+Testnet%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fscroll-alpha-testnet.rpc.thirdweb.com%2F5a9bc94b87f7cbbbfbbc234bf1e07f0adf5f3cf3012c9f26f9fc9820d64df93a%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22scr-alpha%22%2C%22chainId%22%3A534353%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22scroll-alpha-testnet%22%7D"></iframe>
+  </div>
 </body>
 </html>
